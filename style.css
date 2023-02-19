@@ -16,12 +16,15 @@ header,nav,footer{
   font-family: "Arial" , Courier, "Helvetica",sans-serif;
 }
 
+
+
 header {
   
   width:100%;
   margin: 0 auto;
   text-align:  center;
   background-color:darkgreen;
+  padding:10px 0 0 0;
 }
 
 header .heading{
@@ -49,14 +52,15 @@ header .heading a {
 main{
   background-color:#ecfcdf;
   padding:10px 40px 40px 40px;
-  height:400px;
+  height:600px;
+  flex: 1;
 }
 
 
 
 .main-info{
   width:100%;
-  height: 300px;
+  height: 400px;
   display: flex;
 }
 
@@ -75,77 +79,127 @@ main{
 }
 
 .main-text-box{
-  width:20%;
-  height: 300px;
+  width:100%;
+  height: 500px;
   background-color:#fff;
-  padding:0 10px 0 10px;
-  border-radius: 10px 0 0 10px;
+  padding:0 0 0 10px;
+  border-radius: 10px ;
 
+}
+
+.row{
+  display:flex;
+  line-height: 40px;
+}
+
+.label-p{
+  font-weight: bold;
+  width: 100px;
 }
 
 .main-image{
-  height: 230px;
+  height: 400px;
   width:30%;
-  border-radius: 10px 10px 10px 10px;
-  padding:0 10px 0 0;
-}
-
-.main-text{
-  font-weight: bold;
-  width:100px;
-  color:#6c6b6d
-}
-
-.main-text-job{ 
-  font-weight: bold;
-  padding:70px 0 47px  0;
-}
-
-.main-text-sub{
-  width:100%;
-  height:300px;
-  background-color: #fff;
-  border-radius: 0 10px 10px 0;
-
-}
-.main-list-sub{
-  list-style: none;
+  border-radius: 10px ;
+  margin:0 10px 0 0;
 }
 
 .social{
-  padding:0 20px 20px 0;
+  display:flex;
+  
+}
+
+.social i{
+  margin-right: 20px;
 }
 
 
 
-
-
-footer{
+footer {
    width:100%;
    height:100px;
    text-align: center;
-   line-height: 120px;
+   line-height: 100px;
    background-color:darkgreen;
+   position: fixed;
+   bottom: 0;
+   
+   
+   
 }
 
 .footer-text{
-  color: #fff;
-} 
+  color:#fff;
+}
 
- @media screen and (max-width:768px){
-    .nav list {
+ @media screen and (max-width: 768px){
+  
+  .header{
+    width:100%;
+  } 
+  
+  
+  .nav-list {
       width:100%;
     }
 
     main{
-      display:block
+      display: block;
+      height: 1050px;
+    }
+
+    .main-info{
+      display: block;
     }
 
     .main-image{
       width:100%;
+      border-radius: 10px;
+      margin:0 0 10px 0;
+    }
+    
+    .main-label-box{
+      display: flex;
+      flex-wrap: wrap;
+      
     }
 
 
+    .main-text-box{
+      background-color: #fff;
+      margin:10px 0 40px 0 ; 
+      height: 520px;
+      
+    }
+
+
+
+    .social{
+      display: flex;
+      width:100px;
+      
+
+    }
+
+    .social i{
+      line-height: 40px;
+      margin:0 20px 0 0; 
+    }
+
+    footer{
+      position:relative;
+      bottom: 0;
+      
+    }
+      
+    
+
+
+    .footer-text{
+      color:#fff;
+    }
+
+    
 
   }   
 
